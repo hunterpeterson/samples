@@ -1,0 +1,63 @@
+{
+  "lastModified": "2016-01-29T19:51:42.480Z",
+  "marketingCloud": {
+    "org": "3A65992C5584343D7F000101@AdobeOrg"
+  },
+  "target": {
+    "clientCode": "amsdk",
+    "timeout": 5
+  },
+  "audienceManager": {
+    "server": "ams-test.demdex.net",
+    "analyticsForwardingEnabled": false,
+    "timeout": 5
+  },
+  "acquisition": {
+    "server": "c00.adobe.com",
+    "appid": "dbffbd3470a94ad1ef812382293e820502222f8742dc13b4ad53e1bc6751c2af"
+  },
+  "analytics": {
+    "rsids": "hpeterso.sj.hunter.inc",
+    "server": "hpetersosj.sc.omtrdc.net",
+    "ssl": true,
+    "offlineEnabled": true,
+    "charset": "UTF-8",
+    "lifecycleTimeout": 5,
+    "privacyDefault": "optedin",
+    "batchLimit": 0,
+    "timezone": "MST",
+    "timezoneOffset": -420,
+    "referrerTimeout": 5,
+    "backdateSessionInfo": true,
+    "poi": []
+  },
+  "messages": [
+    {
+      "messageId": "eb2d00d7-32c6-4cc4-8f34-bc0a1f19c4ee",
+      "template": "local",
+      "payload": {
+        "wait": 5,
+        "content": "Example Local Notification Click-Through",
+        "adb_deeplink": "https://www.adobe.com"
+      },
+      "showOffline": true,
+      "showRule": "always",
+      "endDate": 2524730400,
+      "startDate": 0,
+      "audiences": [],
+      "triggers": [
+        {
+          "key": "pev2",
+          "matches": "eq",
+          "values": [
+            "AMACTION:LocalNotificationSample"
+          ]
+        }
+      ]
+    }
+  ],
+  "remotes": {
+    "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-55cd0fb361633800140007b1.json",
+    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-55cd0fb13366390017000bb4.json"
+  }
+}
